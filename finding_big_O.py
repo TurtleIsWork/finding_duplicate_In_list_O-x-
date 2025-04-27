@@ -62,7 +62,7 @@ def how_long(function, list_a, list_b):
 
 if __name__ == "__main__":
     print("-------------------------------------------------------")
-    tests = 10000
+    tests = 100000
     total_in_time = 0.
     total_len_time = 0.
     total_in_time_two = 0.
@@ -82,7 +82,7 @@ if __name__ == "__main__":
         total_len_time_two += how_long(find_duplicet_using_len, lists[0], lists[1])
 
     print(f"sample size of {tests}")
-    print(f"in took an avrege of {total_in_time / tests} and a total of {total_in_time * 1000:.3f} ms for n size of {50}\n"
-          f"len took an avrege of {total_len_time / tests} and a total of {total_len_time * 1000:.3f} ms for n size of {50}")
-    print(f"in took an avrege of {total_in_time_two / tests} and a total of {total_in_time_two * 1000:.3f} ms for n size of {100}\n"
-          f"len took an avrege of {total_len_time_two / tests} and a total of {total_len_time_two * 1000:.3f} ms for n size of {100}")
+    print(f"in took an average of {total_in_time / tests} and a total of {total_in_time * 1000:.3f} ms for n size of {50}\n"
+          f"len took an average of {total_len_time / tests} and a total of {total_len_time * 1000:.3f} ms for n size of {50}")
+    print(f"in took an average of {total_in_time_two / tests} and a total of {total_in_time_two * 1000:.3f} ms for n size of {100}\n"
+          f"len took an average of {total_len_time_two / tests} and a total of {total_len_time_two * 1000:.3f} ms for n size of {100}")
